@@ -1,0 +1,21 @@
+<div>
+<app-well (emitData)="addData($event)"></app-well>
+</div>
+<div class="well-list">
+    <table class="table table-bordered">
+     <thead  class="thead-light">
+         <tr>
+             <th>Name</th>
+             <th>Type</th>
+             <th>Source</th>
+         </tr>
+         </thead>
+         <tbody>
+             <tr *ngFor="let well of wells">
+                 <td>{{well.name}}</td>
+                 <td>{{well.type}}</td>
+                 <td [ngClass]="{srckey1:well.source == '10001',srckey2:well.source == '10002',srckey3:well.source == '10003'}" (click)="passData(well)">{{well.source}}</td>
+             </tr>
+             </tbody>
+    </table>
+</div>

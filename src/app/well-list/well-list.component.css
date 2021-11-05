@@ -1,0 +1,19 @@
+.srckey1{
+    background-color: aqua;
+    color: azure;
+}
+.srckey2{
+    background-color: red;
+    color: yellow;
+}
+
+.srckey3{
+    background-color: orange;
+    color:wheat;
+}
+
+.well-list{
+    margin: 20px;
+    padding: 10x;
+    border: black;
+}
